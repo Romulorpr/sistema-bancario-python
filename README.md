@@ -1,5 +1,7 @@
 Sistema Bancário em Python 🏦
+
 📋 Descrição
+
 Sistema bancário simples desenvolvido em Python que simula operações básicas de um banco digital. Esta aplicação de terminal permite gerenciar transações financeiras de forma prática e intuitiva.
 
 ⚙️ Funcionalidades
