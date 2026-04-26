@@ -31,14 +31,9 @@ Saldo atualizado em tempo real
 Formatação monetária (R$ xxx.xx)
 
 🚀 Como Executar
-bash
-# Clone o repositório
-git clone https://github.com/Romulorp/sistema-bancario-python.git
-
-# Acesse o diretório
-cd sistema-bancario-python
 
 # Execute o sistema
+python interface.py  ou 
 python sistema_bancario.py
 🎮 Como Usar
 Execute o programa
@@ -68,6 +63,7 @@ Siga as instruções no terminal
 
 🛠️ Tecnologias Utilizadas
 Python 3.x - Linguagem de programação
+Tkinter  - Biblioteca nativa do Python
 
 Git - Controle de versão
 
@@ -87,6 +83,8 @@ Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes
 
 🔄 Versão
 v1.0 - Versão inicial com operações básicas
+
+v2.0 - Versão com interface grafica.
 
 Suporte a único usuário
 
