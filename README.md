@@ -35,7 +35,8 @@ sisbanco/
 
 ## Como executar
 
-```bash
+```
+bash
 python main.py
 ```
 
@@ -54,17 +55,23 @@ Certifique-se de ter o Python instalado em sua máquina.
 Clone este repositório:
 
 • Bash
+```
 git clone https://github.com/seu-usuario/sistema-bancario-python.git
+```
 
 Navegue até a pasta do projeto:
 
 • Bash
+```
 cd sistema-bancario-python
+```
 
 Execute o arquivo principal:
 
 • Bash
+```
 python main.py
+```
 
 ## Regras de Negócio Implementadas
 
@@ -83,3 +90,16 @@ Banco de Dados:
 • O arquivo dados.db é criado automaticamente na primeira execução do sistema.
 
 Este projeto foi desenvolvido para fins de estudo sobre integração de interfaces gráficas com bancos de dados relacionais em Python.
+
+## Autor
+
+Romulo - Romulorp
+
+## Versão
+
+v1.0 - Versão inicial com operações básicas
+
+v2.0 - Versão com interface grafica.
+
+v3.0 - Versão final com SQLite e CRUD completo
+
