@@ -1,93 +1,85 @@
-Sistema Bancário em Python 🏦
+# SisBanco — 
+Sistema Bancário com Python & Tkinter
+Este é um projeto de sistema bancário desenvolvido em Python, utilizando SQLite para persistência de dados e Tkinter para a interface gráfica. O sistema permite o gerenciamento completo de contas, incluindo cadastro, operações de depósito, saque e visualização de extrato em tempo real.
 
-📋 Descrição
+## Funcionalidades
 
-Sistema bancário simples desenvolvido em Python que simula operações básicas de um banco digital. Esta aplicação de terminal permite gerenciar transações financeiras de forma prática e intuitiva.
+Gestão de Usuários:
 
-⚙️ Funcionalidades
-💰 Operação de Depósito
-Depósito de valores positivos
+• Cadastro de novas contas com validação de CPF (11 dígitos).
+• Login seguro por CPF.
+• Edição de nome do titular.
+• Encerramento definitivo de conta.
 
-Atualização automática do saldo
+Operações Bancárias:
 
-Registro no histórico de transações
+• Depósitos e saques com atualização imediata de saldo.
+• Regras de negócio aplicadas: limite de R$ 500,00 por saque e máximo de 3 saques por sessão.
 
-💵 Operação de Saque
-Limite de 3 saques diários
+Histórico e Persistência:
 
-Valor máximo de R$ 500,00 por saque
+• Banco de dados SQLite integrado para salvar contas e transações.
+• Extrato detalhado exibindo tipo de operação (▲/▼), valor e data/hora.
 
-Verificação de saldo disponível
+## Estrutura
 
-Controle de saques realizados no dia
+```
+sisbanco/
+├── main.py        # Ponto de entrada
+├── conta.py       # Classe Conta com regras de negócio
+├── banco.py       # CRUD e acesso ao SQLite
+├── interface.py   # Interface gráfica com tkinter
+├── dados.db       # Banco de dados (gerado automaticamente)
+└── README.md
+```
 
-📊 Operação de Extrato
-Exibição completa do histórico de transações
+## Como executar
 
-Listagem de todos os depósitos e saques
+```bash
+python main.py
+```
 
-Saldo atualizado em tempo real
+> Nenhuma dependência externa. Usa apenas bibliotecas da biblioteca padrão do Python (tkinter, sqlite3).
 
-Formatação monetária (R$ xxx.xx)
+## Tecnologias
 
-🚀 Como Executar
+•  Python 3
+•  tkinter — interface gráfica
+•  sqlite3 — persistência de dados
 
-# Execute o sistema
-python interface.py  ou 
-python sistema_bancario.py
-🎮 Como Usar
-Execute o programa
+## 🔧 Como Executar
 
-Escolha uma opção do menu:
+Certifique-se de ter o Python instalado em sua máquina.
 
-[d] para Depositar
+Clone este repositório:
 
-[s] para Sacar
+• Bash
+git clone https://github.com/seu-usuario/sistema-bancario-python.git
 
-[e] para ver Extrato
+Navegue até a pasta do projeto:
 
-[q] para Sair
+• Bash
+cd sistema-bancario-python
 
-Siga as instruções no terminal
+Execute o arquivo principal:
 
-🛡️ Regras do Sistema
-✅ Apenas valores positivos para depósito
+• Bash
+python main.py
 
-✅ Máximo de 3 saques por dia
+## Regras de Negócio Implementadas
 
-✅ Limite de R$ 500,00 por saque
+Saques:
 
-✅ Verificação de saldo antes do saque
+• Não é possível sacar valores negativos ou maiores que o saldo disponível.
+• Existe um limite máximo de R$ 500,00 por operação de saque.
+• O usuário pode realizar no máximo 3 saques durante a sessão ativa.
 
-✅ Histórico completo de transações
+Depósitos:
 
-🛠️ Tecnologias Utilizadas
-Python 3.x - Linguagem de programação
-Tkinter  - Biblioteca nativa do Python
+• Apenas valores positivos são aceitos.
 
-Git - Controle de versão
+Banco de Dados:
 
-GitHub - Hospedagem do código
+• O arquivo dados.db é criado automaticamente na primeira execução do sistema.
 
-📦 Estrutura do Projeto
-text
-sistema-bancario-python/
-├── sistema_bancario.py  # Código principal
-├── README.md           # Documentação
-└── .gitignore         # Arquivos ignorados pelo Git
-👨‍💻 Autor
-Romulo - Romulorp
-
-📄 Licença
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
-
-🔄 Versão
-v1.0 - Versão inicial com operações básicas
-
-v2.0 - Versão com interface grafica.
-
-Suporte a único usuário
-
-Operações de depósito, saque e extrato
-
-Interface simples de terminal
+Este projeto foi desenvolvido para fins de estudo sobre integração de interfaces gráficas com bancos de dados relacionais em Python.
